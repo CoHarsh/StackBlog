@@ -1,0 +1,110 @@
+{
+    "title":"This commands will help you out in your mongoDb journey and this is biginner 😊 friendly.",
+    "data":[
+    {
+        "count":1,
+        "desc":"Active the mongoDb in Command Line Interface",
+        "snippet":"mongo"
+    },
+    {
+        "count":2,
+        "desc":"View all databases",
+        "snippet":"show dbs"
+    },
+    {
+        "count":3,
+        "desc":"create a new database",
+        "snippet":"use dbname"
+    },
+    {
+        "count":4,
+        "desc":"Delete a database",
+        "snippet":"db.dropDatabase()"
+    },
+    {
+        "count":5,
+        "desc":"To show all collections in CLI",
+        "snippet":"show collections"
+    },
+    {
+        "count":6,
+        "desc":"Create a collecion named 'dbData'",
+        "snippet":"db.createCollection('dbData')"
+    },
+    {
+        "count":7,
+        "desc":"To delete the collection Ex: I want to drop the 'dbData' named collection",
+        "snippet":"db.dbData.drop()"
+    },
+    {
+        "count":8,
+        "desc":"Show all Rows in a collection",
+        "snippet":"db.dbData.find()"
+    },
+    {
+        "count":9,
+        "desc":"Show all Rows in collection in prettier(JSON formate)",
+        "snippet":"db.dbData.find().pretty()"
+    },
+    {
+        "count":10,
+        "desc":"Insert a Row in mongoDb collection",
+        "snippet":"db.dbData.insert({'name':'Harsh' , 'lang':'JavaScript' , 'member_since':5})"
+    },
+    {
+        "count":11,
+        "desc":"Insert More than one Row in mongoDb collection",
+        "snippet":"db.dbData.insertMany([{ 'name':'Harsh','lang':'JavaScript','member_since':5},                                                          {'name':'Satyam','lang':'Python','member_since':4},                                                          {'name':'Meena','lang':'C++','member_since':3}])"
+    },
+    {
+        "count":12,
+        "desc":"Search in a MongoD database",
+        "snippet":"db.dbData.find({lang:'Python'})"
+    },
+    {
+        "count":13,
+        "desc":"Limit the number of rows in output",
+        "snippet":"db.dbData.find().limit(2)"
+    },
+    {
+        "count":14,
+        "desc":"Count the number of rows in the output",
+        "snippet":"db.dbData.find().count()"
+    },
+    {
+        "count":15,
+        "desc":"Delete a database",
+        "snippet":"db.dropDatabase()"
+    },
+    {
+        "count":16,
+        "desc":"Sort the data according to accending order",
+        "snippet":"db.dbData.find().sort({member_since:-1}).pretty()"
+    },
+    {
+        "count":17,
+        "desc":"Update a rows and result not find the add on via {upsert:true}",
+        "snippet":"db.dbData.update({name:'Harsh'} , {'name':'Harsha','lang':'JavaScript','member_since':5} , {upsert: true})"
+    },
+    {
+        "count":18,
+        "desc":"Mongodb collection Increment Operator (Will increment the number by 2)",
+        "snippet":"db.dbData.update({name:'Harsh'} , {$inc:{member_since:2}})"
+    },
+    {
+        "count":19,
+        "desc":"Mongodb collection's Rename Operator",
+    "snippet":"db.dbData.update({name:'Harsh'},{$rename:{member_since:'member'}})"
+    },
+    {
+        "count":21,
+        "desc":"Delete a Row with given attribute",
+        "snippet":"db.dbData.remove({'name':'Harsh'})"
+    },
+    {
+        "count":22,
+        "desc":"Find Less than/Greater than/ Less than or Eq/Greater than or equation",
+        "snippet":"db.dbData.find({member_since:{$lt:90}})"
+    }  
+    ]
+}

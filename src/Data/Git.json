@@ -1,0 +1,81 @@
+{
+    "title":"Git commands to work on open source project and this is helpfull 💁 trully.",
+    "data":[
+        {
+            "count":1,
+            "desc":"To fetch the code to your local computer",
+            "snippet":"git clone <http link>"
+        },
+        {
+            "count":2,
+            "desc":"To make a new branch with name 'newBranch'",
+            "snippet":"git branch 'newBranch'"
+        },
+        {
+            "count":3,
+            "desc":"To push the new branch into the remote repository, you need to use the following command:",
+            "snippet":"git push -u <remote> <branch-name>"
+        },
+        {
+            "count":4,
+            "desc":"Viewing branches:",
+            "snippet":"git branch --list"
+        },
+        {
+            "count":5,
+            "desc":"To work in a branch, first you need to switch to it. We use git checkout mostly for switching from one branch to another. ",
+            "snippet":"git checkout <name-of-your-branch>"
+        },
+        {
+            "count":6,
+            "desc":"To work in a branch, first you need to switch to it. We use git checkout mostly for switching from one branch to another. ",
+            "snippet":"git checkout <name-of-your-branch>"
+        },
+        {
+            "count":7,
+            "desc":"There is also a shortcut command that allows you to create and switch to a branch at the same time:",
+            "snippet":"git checkout -b <name-of-your-branch>"
+        },
+        {
+            "count":8,
+            "desc":"The Git status command gives us all the necessary information about the current branch. ",
+            "snippet":"git status"
+        },
+        {
+            "count":9,
+            "desc":"When we create, modify or delete a file, these changes will happen in our local and won't be included in the next commit (unless we change the configurations).We need to use the git add command to include the changes of a file(s) into our next commit.",
+            "snippet":"git add <file>"
+        },
+        {
+            "count":10,
+            "desc":"Once we reach a certain point in development, we want to save our changes.Git commit is like setting a checkpoint in the development process which you can go back to later if needed.We also need to write a short message to explain what we have developed or changed in the source code.",
+            "snippet":"git commit -m 'commit message'"
+        },
+        {
+            "count":11,
+            "desc":"After committing your changes, the next thing you want to do is send your changes to the remote server. Git push uploads your commits to the remote repository.",
+            "snippet":"git push -u origin <branch_name>"
+        },
+        {
+            "count":12,
+            "desc":"The git pull command is used to get updates from the remote repo. This command is a combination of git fetch and git merge which means that, when we use git pull, it gets the updates from remote repository (git fetch) and immediately applies the latest changes in your local (git merge).",
+            "snippet":"git pull <remote>"
+        },
+        {
+            "count":13,
+            "desc":"A safer way that we can undo our commits is by using git revert. To see our commit history, first we need to use git log -- oneline:",
+            "snippet":"git revert <hash_value>"
+        },
+        {
+            "count":14,
+            "desc":"Before merging, you should update your local dev branch so run the below code thatwill fetch the all updated code in local computer.",
+            "snippet":"git fetch"
+        },
+        {
+            "count":15,
+            "desc":"When you've completed development in your branch and everything works fine, the final step is merging the branch with the parent branch (dev or master). This is done with the git merge command.",
+            "snippet":"git merge <branch-name>"
+        }
+
+    ]
+}
